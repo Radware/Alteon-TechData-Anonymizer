@@ -32,20 +32,14 @@ cd Alteon-TechData-Anonymizer
 2.	Populate the file **custom_words_to_remove.txt** with your relevant sensitive information such as application names, users etc. separated by space or new line, the Anonymizer ignores case sensitive, so you don’t have to provide the exact name.
 Important – don’t change the name of this file (custom_words_to_remove.txt).
 
-3.	Grant executable permission to the following file:
-
-```
-chmod +x Anonymizer.py
-```
-
-4.	Run the Anonymizer.py file, for example:
+3.	Run the Anonymizer.py file, for example:
 
 ```
 py Anonymizer.py
 ```
 
-5.	In the window that opened choose the techdata file (the suffix should be “tgz”).
-6.	Now the tool is waiting to your input, there are 2 options to choose:
+4.	In the window that opened choose the techdata file (the suffix should be “tgz”).
+5.	Now the tool is waiting to your input, there are 2 options to choose:
 
     a.	Type **1** in the terminal to replace all IP addresses in all files with “x.x.x.x”.
         For example – 10.10.10.10 will be x.x.x.x.
@@ -55,8 +49,8 @@ py Anonymizer.py
 
     Note: The IP addresses in the rest files will be x.x.x.x.
 
-8.	The directory **Anonymized_from_[date]_[time]** will be created in the current folder where the Anonymizer.py file is located.
-9.	After the script has finished running, explore some files to make sure that your sensitive information is not there.
+6.	The directory **Anonymized_from_[date]_[time]** will be created in the current folder where the Anonymizer.py file is located.
+7.	After the script has finished running, explore some files to make sure that your sensitive information is not there.
 
     Note: There are some files without a suffix, even though you can open them by notepad, notepad++, etc.
 
